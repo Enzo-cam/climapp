@@ -1,0 +1,125 @@
+:root{
+    --text-color: white;
+    --text-color-secon: black;
+    --background-color: #2C2C2C;
+    --first-color : rgb(148, 1, 1);
+    --second-color: rgb(85, 83, 83);
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+/* Input */
+.search__form{
+    max-width: 30rem;
+    padding: 20px;
+    margin-bottom: 1rem;
+    background-color: var(--first-color);
+}
+
+.search__input{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 0 auto;
+    border: none;
+    border-radius: 3px;
+}
+.search__input:focus{
+    outline: none;
+}
+
+button#eliminate{
+    position: absolute;
+    top: 3%;
+    left: 91%;
+    background: none;
+    border: none;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Weather Card */
+.weather__card{
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    width: 70%;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    display: none;
+}
+
+.weather__card-city{
+    font-size: 1.8rem;
+    margin-bottom: .3rem;
+    font-weight: 500;
+}
+
+.weather__card-date{
+    font-size: .8rem;
+    margin-bottom: 1rem;
+    color: var(--second-color);
+}
+
+.weather__card-clima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.weather__card-clima img{
+    width: 18%;
+}
+
+.weather__card-temp{
+    margin-left: .3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.weather__card-sol{
+    font-size: 1.4rem;
+    margin-bottom: .4rem;
+}
+
+
+/* Footer */
+footer p{
+    position: fixed;
+    bottom: 0;
+    margin: 1rem 10px;
+    text-align: center;
+    max-width: 100%;
+}
+footer a{
+    font-weight: 500;
+    color: var(--first-color);
+    text-decoration: none;
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {
+    .search__form{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .weather__card{
+        display: none;
+        width: 25%;
+        padding: 2rem 0;
+    }
+    button.elimButton{
+        left: 61%;
+        top: 12%;
+    }
+}

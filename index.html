@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimApp</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <div class="search__form">
+            <form action="#" id="search">
+                <div class="search__box">
+                    <input 
+                        type="search" 
+                        autocomplete="off" 
+                        placeholder="Ingrese su ciudad" 
+                        id="searchInput" 
+                        class="search__input"
+                    >
+                </div>
+            </form>
+        </div>
+        
+        <div class="card-container">
+            <div class="weather__card" id="card">
+                <button class="elimButton" id="eliminate" type="submit">X</button>
+                <div class="weather__card-city" id="city">Corrientes, AR</div>
+                <div class="weather__card-date" id="date">11/06/2022</div>
+                <div class="weather__card-clima">
+                    <img src="" alt="imgWeather" class="weather__card-img" id="img">
+                    <div class="weather__card-temp" id="temp">14°</div>
+                </div>
+                <div class="weather__card-sol" id="day">Sunning</div>
+                <div class="weather__card-minMax" id="range">4° - 17°</div>
+            </div>
+        </div>
+        
+        
+
+        <footer>
+            <p>Created by <a href="https://www.linkedin.com/in/enzo-camera/" target="_blank">©EC7</a>; Inspired by a Workshop from Platzi</p>
+        </footer>
+
+        <script src="./sources/index.js" defer></script>
+    </main>
+</body>
+</html>
